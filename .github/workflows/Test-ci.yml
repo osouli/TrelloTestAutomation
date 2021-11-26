@@ -33,7 +33,7 @@ jobs:
        newman run .github/workflows/trelloTestCollection.postman_collection.json -e .github/workflows/trelloTestEnvironment.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
 
     # Upload the contents of Test Results directory to workspace
-    - name: Output the run Details
+    - name: Output the run Detail
       uses: actions/upload-artifact@v2
       with: 
        name: RunReports
